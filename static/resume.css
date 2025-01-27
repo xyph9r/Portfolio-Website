@@ -1,0 +1,77 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(78, 76, 76);
+
+    color: white;
+}
+h1{
+    font-size: 18px;
+    
+}
+h2{
+    font-size: 16px;
+
+}
+#download{
+    position: absolute;
+    right: 5%;
+    font-size: 18px;
+    
+}
+
+.resume-container{
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.header, .objective, .education, .coursework, .work, .skills, .projects{
+    padding-bottom: 2%;
+}
+
+.footerformat{
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(37, 34, 34, 0.952);
+    height: 1.875rem;
+    align-items: center;
+}
+
+.footerformat ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-right: 21.875rem;
+    
+}
+.footerformat ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0.625rem;
+    justify-content: center;
+    font-size: 0.9375rem;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerformat ul li a:hover{
+    opacity: 1;
+
+}
+.footercopy{
+    font-size: 0.9375rem;
+    padding-left: 0.625rem;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 25rem;
+    margin: 0rem 0.3125rem;
+}
+

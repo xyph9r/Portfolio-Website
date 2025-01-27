@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %} Resume {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'resume.css')}}">
+
+{% endblock %}
+
+
+
+{% block content %}
+<a id = "download" href ="static/Resume.pdf" download>Download here</a>
+
+
+<div class = "resume-container">
+    <div class = "header">
+       <h1>Ronald Adkins</h1>
+       <p>Ronaldadkins97@gmail.com | 540-729-8976</p>
+    </div>
+    <div class = "objective">
+        <h1>Objective:</h1>
+        <p>Computer Science graduate with a passion for web development and programming. Skilled in analyzing
+            complex problems, developing efficient software solutions, and leveraging technical expertise to create
+            dynamic, user-focused applications. Seeking a developer role to contribute to innovative projects.
+        </p>
+    </div>
+    <div class = "education">
+        <h1>Education:</h1>
+        <p>Bachelor of Science in Computer Science<br> Southern New Hampshire University, Manchester, NH</p>
+    </div>
+    <div class = "coursework">
+        <h1>Relevant coursework:</h1>
+        <p>Algorithms and Data Structures, Software Engineering, Database Management, Computer Networks,
+        Operating Systems.</p>
+    </div>
+    <div class = "work">
+        <h1>Work Experience</h1>
+        <h1>Configuration Management Specialist</h1>
+        <h2>EEI Manufacturing Services, Clearwater, FL (2023 - Present)</h2>
+        <ul>
+            <li>Implemented and maintained manufacturing work instructions and processes for cable and electromechanical assemblies.</li>
+            <li>Managed engineering changes and maintained accurate records throughout the product lifecycle</li>
+            <li>Ensured accurate documentation and conducted audits.</li>
+            <li>Improved efficiency through version control systems and automation tools.</li>
+        </ul>
+        <h1>IT Support Specialist</h1>
+        <h2>EEI Manufacturing Services, Clearwater, FL (July 2022 - Present)</h2>
+        <ul>
+            <li>Provided technical assistance and resolved system issues efficiently.</li>
+            <li>Installed and maintained computer systems and software.</li>
+        </ul>
+        <h1>Proposal Analyst</h1>
+        <h2>EEI Manufacturing Services, Clearwater, FL (2022 - Present)</h2>
+        <ul>
+            <li>Analyzed customer requirements and created detailed proposals.</li>
+            <li>Conducted market research and maintained proposal database</li>
+            <li>Collaborated with sales and engineering teams, leading to multiple contract wins.</li>
+        </ul>
+    </div>
+    <div class = "skills">
+        <h1>Skills:</h1>
+        <p>Programming Languages: JavaScript, Python<br>Web Development: HTML, CSS, Flask, Bootstrap<br>Database Management: MySQL, MongoDB<br>Software Development: Git<br>Other skills: Data and information analysis, Problem-solving, Configuration Management</p>
+    </div>
+    <div class = "projects">
+        <h1>Projects:</h1>
+        <h1>Portfolio Website</h1>
+        <ul>
+            <li>Designed and implemented a responsive portfolio website to showcase skills, projects, and achievements.</li>
+            <li>Utilized HTML, CSS, and Bootstrap for front-end development and ensured cross-browser compatibility.</li>
+        </ul>
+        <h1>Uno Game Simulation</h1>
+        <ul>
+            <li>Built a Python-based card game with optimized logic for performance and custom rules.</li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<footer>
+    <div class = "footerformat">
+        <div class ="footercopy">   
+            <p> Copyright &copy;2025: Design by<span class="designer">Ronald Adkins</span></p>
+        </div>
+        <ul>
+            
+            <li><a href="home">home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="projects">projects</a></li>
+        </ul>
+   
+    </div>
+</footer>
+
+   
+{% endblock %}

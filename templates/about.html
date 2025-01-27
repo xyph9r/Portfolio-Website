@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %} About Me {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'about.css')}}">
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class ="about-container">  
+    <div class="aboutme-text">
+        <h1>About me</h1>
+            <h2>I am a Computer Science college graduate based in Tampa, Florida.</h2>
+                <p>I am learning python and pythons flask framework in order to learn how to create webpages. The purpose of this website is to have all of my projects and resume all in one location. I found a strong passion for web-development while making this portfolio website. If I am not coding you'll find me spending time with my wife, watching tv, or playing video games. Feel free to explore my portfolio!</p>
+    </div>
+    <img class = "profileimage" src = "{{url_for('static', filename = 'profilepic.jpg')}}">
+</div>
+
+<div class = "cycle-container">
+    <img class = "cycle3" src ="{{url_for('static', filename = 'cycleimg3.jpg')}}">
+    <img class = "cycle1"src ="{{url_for('static', filename = 'cycleimg1.jpg')}}">
+    <img class = "cycle2"src ="{{url_for('static', filename = 'cycleimg2.jpg')}}">
+    <img class = "cycle4"src ="{{url_for('static', filename = 'cycleimg4.png')}}">
+</div>
+
+
+<div class = "list-container">
+    <div class = "list-column-one">
+        <h2>Part Designer</h2>
+        <ul>
+            <li><p>UI Design</p></li>
+            <li><p>UX Design</p></li>
+            <li><p>Interaction Design</p></li>
+            <li><p>"Adding that pop"</p></li>
+        </ul>
+    </div>
+    <img class = "chart" src = "{{url_for('static', filename = 'chart.png')}}">
+    <div class = "list-column-two">
+        <h2 >Part Coder</h2>
+        <ul>
+            <li><p>Front-end development</p></li>
+            <li><p>HTML/CSS</p></li>
+            <li><p>JavaScript(learning)</p></li>
+            <li><p>Problem Solving</p></li>
+        </ul>
+    </div>
+</div>
+
+<div class="facts-container">
+    <img class = "facts-pic" src = "{{url_for('static', filename = 'proplayer.jpg')}}">
+    <div class="factslist-container">
+        <h2>Random Facts</h2>
+            <ul>
+                <li>Played pro in Fortnite</li>
+                <li>Played semi-pro in Valorant</li>
+                <li>Love Diet Coke</li>
+                <li>Married to my bestfriend</li>
+                <li>Have a twin brother</li>
+            </ul>
+    </div>
+</div>
+
+
+<footer>
+    <div class = "footerformat">
+        <div class ="footercopy">   
+            <p> Copyright &copy;2025: Design by<span class="designer">Ronald Adkins</span></p>
+        </div>
+        <ul>
+            
+            <li><a href="home">home</a></li>
+            <li><a href="projects">projects</a></li>
+            <li><a href="resume">resume</a></li>
+        </ul>
+   
+    </div>
+</footer>
+
+   
+{% endblock %}

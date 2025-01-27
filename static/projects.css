@@ -1,0 +1,135 @@
+body{
+    background-image: url('/static/projectpic2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    color: black;
+    text-align: center;
+    padding-top: 3%;
+}
+.project-one-container{
+    display:inline-flex;
+    margin-top: 2%;
+    border: 4px;
+    border-style: outset;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: black;
+
+}
+
+
+.project-one-head{
+    text-align: right;
+    color: white;
+    
+}
+.project-one-column{
+    display:flex;
+    flex-direction: column;
+    padding-right: 1%;
+
+}
+
+.project-one-para{
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: left;
+    color:white;
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+   
+    
+}
+.project-one-pic{
+    margin-bottom: 2%;
+    border: 0.375rem;
+    border-style: inset;
+    border-color:#FF0090;
+    
+
+}
+
+.project-two-container{
+    display:inline-flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    border: 0.25rem;
+    border-style: outset;
+    background-color: black;
+
+}
+
+.project-two-para{
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 2%;
+    align-items: right;
+    color:white;
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+}
+.project-two-head{
+    padding-left: 5%;
+    color: white;
+}
+.project-two-pic{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border: 0.375rem;
+    border-style: inset;
+    border-color: aqua;
+
+}
+
+.footerformat{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(37, 34, 34, 0.952);
+    height: 1.875rem;
+    align-items: center;
+}
+
+.footerformat ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-right: 21.875rem;
+    
+}
+.footerformat ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0.625rem;
+    justify-content: center;
+    font-size: 0.9375rem;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerformat ul li a:hover{
+    opacity: 1;
+
+}
+.footercopy{
+    font-size: 0.9375rem;
+    padding-left: 0.625rem;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 25rem;
+    margin: 0rem 0.3125rem;
+}
+
+
+

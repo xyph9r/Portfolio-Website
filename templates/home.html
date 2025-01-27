@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block head %} 
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'home.css')}}">
+{% endblock %}
+
+{% block content %} 
+
+
+<div class = "container">
+    <div class = "web-developer"> 
+        <h1>WEB-DEVOLOPER</h1>
+        <p>Creating beautiful websites with professional layouts</p>
+    </div> 
+    <div class = "coder">
+        <h1>&lt;CODER&gt;</h1>
+        <p>Front-end developer writing clean and efficient code</p>
+    </div>  
+</div>
+
+<div class = "recent">
+    <h2>RECENT WORK</h2>
+    <p><a href = "https://github.com/xyph9r/Uno-Game/tree/main/Project">
+        <img class = "image" src = "{{url_for('static', filename = 'unoproject.jpg')}}" alt ="Uno Project">
+    </a></p>
+</div>
+
+
+
+
+<footer>
+    <div class = "footerformat">
+        <div class ="footercopy">   
+            <p> Copyright &copy;2025: Design by<span class="designer">Ronald Adkins</span></p>
+        </div>
+        <ul>
+            
+            <li><a href="about">about</a></li>
+            <li><a href="projects">projects</a></li>
+            <li><a href="resume">resume</a></li>
+        </ul>
+   
+    </div>
+</footer>
+
+
+   
+  
+{% endblock %}

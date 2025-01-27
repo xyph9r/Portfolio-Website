@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %} About Me {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'projects.css')}}">
+
+{% endblock %}
+
+{% block content %}
+
+<h1>My Projects</h1>
+
+ 
+<div class ="project-one-container">
+    <p class ="project-one-para">This project is of the iconic game "Uno". In this project I implemented the functionalilty of the game and allowing you to choose a number of players between 2-4. In this project I was able to display my knowledge of classes and fucntions along with dealing with game logic and flow to make sure the correct player goes next as well as making sure all actions work as intended.</p>
+    <div class= "project-one-column">
+        <h2 class= "project-one-head">Uno in Python</h2>
+        <p><a href="https://github.com/xyph9r/Uno-Game/tree/main/Project">
+        <img class = "project-one-pic" src= "{{url_for('static', filename = 'unopic.jpg')}}"></a></p>
+    </div>
+</div>  
+
+<div class="project-two-container">
+    <div>
+        <h2 class= "project-two-head">Portfolio Website</h2>
+        <p><a href = "http://127.0.0.1:5000/home">
+        <img class = "project-two-pic" src= "{{url_for('static', filename = 'webdesign.jpg')}}"></a></p>
+    </div>
+    <p class ="project-two-para">This project is a website where I can show off all my latest work in one location. In this project I learned a lot about front-end development and really enjoyed making this website. This shows my ability to learn a new topic and languages in order to provide a professionally styled website. </p>
+</div>
+
+
+<footer>
+    <div class = "footerformat">
+        <div class ="footercopy">   
+            <p> Copyright &copy;2025: Design by<span class="designer">Ronald Adkins</span></p>
+        </div>
+        <ul>
+            
+            <li><a href="home">home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="resume">resume</a></li>
+        </ul>
+   
+    </div>
+</footer>
+
+   
+{% endblock %}
