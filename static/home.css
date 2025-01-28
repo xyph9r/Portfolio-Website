@@ -41,13 +41,14 @@ body{
 .footerformat{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position:fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(37, 34, 34, 0.952);
     height: 1.875rem;
     align-items: center;
 }
+
 
 .footerformat ul{
     display: flex;

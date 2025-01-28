@@ -6,17 +6,26 @@ body{
     color: white;
 }
 h1{
-    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
     
-}
-h2{
-    font-size: 16px;
 
+h2, h3{
+    font-size: 1rem;
+    font-weight: bold;
 }
+h4{
+    font-size: .85rem;
+}
+
+
+
 #download{
     position: absolute;
-    right: 5%;
+    right: 10%;
     font-size: 18px;
+    color: white;
     
 }
 
@@ -34,12 +43,15 @@ h2{
 .footerformat{
     display: flex;
     justify-content: space-between;
-    position:relative;
+    position:fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(37, 34, 34, 0.952);
     height: 1.875rem;
     align-items: center;
+}
+.footerformat p{
+    color: white;
 }
 
 .footerformat ul{
